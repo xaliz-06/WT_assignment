@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WT Assignment</title>
+  </head>
+  <body>
+    <navbar>
+      <div class="navbar">
+        <div class="nav_container">
+          <div class="nav_toggle"></div>
+          <nav class="nav_links">
+            <a href="./index.html" class="nav_link">Welcome!</a>
+            <a href="./pages/basics.html" class="nav_link">HTML Basics</a>
+            <a href="./pages/tags.html" class="nav_link">HTML Tags</a>
+            <a href="./pages/table.html" class="nav_link">Table</a>
+            <a href="./pages/lists.html" class="nav_link">Lists</a>
+            <a href="./pages/ul.html" class="nav_link">Unordered List</a>
+            <a href="./pages/ol.html" class="nav_link">Ordered List</a>
+          </nav>
+        </div>
+        <div class="links_section">
+          <a class="link" href="./index.html">Welcome</a>
+          <a class="link" href="./about.html">About Our Team</a>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToStart()">START</button>
+        </div>
+        <div class="content">
+          <div class="main_section">
+            <div class="main_content">
+              <h1 class="main_header">Start learning HTML here!</h1>
+              <p class="main_para">
+                All the Content here is taken from W3Schools as a reference.
+                Visit here -
+                <a
+                  href="https://www.w3schools.com/html/default.asp"
+                  class="main_link"
+                  >HTML Tutorial</a
+                >
+              </p>
+              <p class="main_para">
+                Click on the Hamburger Menu on the Top-Left to Navigate the
+                Contents. Or start by clicking on the button. <br />Check the
+                information about our team on the Top-Right.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" defer></script>
+    <script>
+      function goToStart() {
+        window.location.href = "./pages/basics.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tags in HTML</title>
+  </head>
+  <body>
+    <navbar>
+        <div class="navbar">
+
+            <div class="nav_container">
+                <div class="nav_toggle"></div>
+                <nav class="nav_links">
+                    <a href="./../index.html" class="nav_link">Welcome!</a>
+                    <a href="./basics.html" class="nav_link">HTML Basics</a>
+                    <a href="./tags.html" class="nav_link">HTML Tags</a>
+                    <a href="./table.html" class="nav_link">Table</a>
+                    <a href="./lists.html" class="nav_link">Lists</a>
+                    <a href="./ul.html" class="nav_link">Unordered List</a>
+                    <a href="./ol.html" class="nav_link">Ordered List</a>
+                </nav>
+            </div>
+            <div class="links_section">
+                <a class="link" href="./../index.html">Welcome</a>
+                <a class="link" href="./../about.html">About Our Team</a>
+            </div>
+        </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToBasicsPage()">PREV</button>
+          <button type="button" onclick="goToTablesPage()">NEXT</button>
+        </div>
+        <div class="content">
+          <div class="introduction section">
+            <h1 class="header_page">HTML Tags Examples</h1>
+            <p class="section_para">
+              An HTML element is defined by a start tag, some content, and an
+              end tag.<br />
+
+              The HTML element is everything from the start tag to the end tag:
+            </p>
+          </div>
+          <div class="section section_1">
+            <h1 class="section_header">Nested HTML Elements</h1>
+            <p class="section_para">
+              HTML elements can be nested (this means that elements can contain
+              other elements).<br />
+              All HTML documents consist of nested HTML elements.<br />
+              The following example contains four HTML elements
+              (<code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>,
+              <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>):<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;body&gt;
+
+                &lt;h1&gt;My First Heading&lt;/h1&gt;
+                &lt;p&gt;My first paragraph.&lt;/p&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+              </pre>
+            </code>
+          </div>
+          <div class="section section_2">
+            <h1 class="section_header">HTML Headings</h1>
+            <p class="section_para">
+              HTML headings are defined with the <code>&lt;h1&gt;</code> to
+              <code>&lt;h6&gt;</code> tags.<br />
+              <code>&lt;h1&gt;</code> defines the most important heading.
+              <code>&lt;h6&gt;</code> defines the least important heading.<br />
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;h1&gt;Heading 1&lt;/h1&gt;
+                &lt;h2&gt;Heading 2&lt;/h2&gt;
+                &lt;h3&gt;Heading 3&lt;/h3&gt;
+                &lt;h4&gt;Heading 4&lt;/h4&gt;
+                &lt;h5&gt;Heading 5&lt;/h5&gt;
+                &lt;h6&gt;Heading 6&lt;/h6&gt;
+              </pre>
+              </code>
+          </div>
+
+          <div class="section section_3">
+            <h1 class="section_header">HTML Paragraphs</h1>
+            <p class="section_para">
+                A paragraph always starts on a new line, and is usually a block of text.<br/>
+                The HTML <code>&lt;p&gt;</code> element defines a paragraph.<br/>
+                A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.<br/>
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                &lt;p&gt;This is another paragraph.&lt;/p&gt;
+                </pre>
+            </code>
+            
+          </div>
+          <div class="section section_4">
+            <h1 class="section_header">HTML Horizontal Rules</h1>
+            <p class="section_para">
+                The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br/>
+                The <code>&lt;hr&gt;</code> element is used to separate content (or define a change) in an HTML page:<br/>
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;h1&gt;This is heading 1&lt;/h1&gt;
+                &lt;p&gt;This is some text.&lt;/p&gt;
+                &lt;hr&gt;
+                &lt;h2&gt;This is heading 2&lt;/h2&gt;
+                &lt;p&gt;This is some other text.&lt;/p&gt;
+                &lt;hr&gt;
+                </pre>
+            </code>
+          </div>
+
+          <div class="section section_5">
+            <h1 class="section_header">HTML Line Breaks</h1>
+            <p class="section_para">
+                The HTML <code>&lt;br&gt;</code> element defines a line break.<br/>
+                Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:<br/>
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;
+                </pre>
+            </code>
+          </div>
+
+          <div class="section section_6">
+            <h1 class="section_header">HTML Formatting Elements</h1>
+            <p class="section_para">
+                Formatting elements were designed to display special types of text:
+                <ul class="section_list">
+                    <li><code>&lt;b&gt;</code> - Bold text</li>
+                    <li><code>&lt;strong&gt;</code> - Important text</li>
+                    <li><code>&lt;i&gt;</code> - Italic text</li>
+                    <li><code>&lt;em&gt;</code> - Emphasized text</li>
+                    <li><code>&lt;mark&gt;</code> - Marked text</li>
+                    <li><code>&lt;small&gt;</code> - Smaller text</li>
+                    <li><code>&lt;del&gt;</code> - Deleted text</li>
+                    <li><code>&lt;ins&gt;</code> - Inserted text</li>
+                    <li><code>&lt;sub&gt;</code> - Subscript text</li>
+                    <li><code>&lt;sup&gt;</code> - Superscript text</li>
+                </ul>
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;b&gt;This is bold Text&lt;/b&gt;
+                &lt;strong&gt;This is Important Text&lt;/strong&gt;
+                &lt;i&gt;This is Italic Text&lt;/i&gt;
+                &lt;em&gt;This is Emphasized Text&lt;/em&gt;
+                &lt;mark&gt;This is Marked Text&lt;/mark&gt;
+                &lt;small&gt;This is Smaller Text&lt;/small&gt;
+                &lt;del&gt;This is Deleted Text&lt;/del&gt;
+                &lt;ins&gt;This is Inserted Text&lt;/ins&gt;
+                &lt;sub&gt;This is Superscript Text&lt;/sub&gt;
+                &lt;sup&gt;This is Superscript Text&lt;/sup&gt;
+                </pre>
+            </code>
+          </div>
+
+          <div class="section section_7">
+            <h1 class="section_header">HTML Comment Tag</h1>
+            <p class="section_para">
+                HTML comments are not displayed in the browser, but they can help document your HTML source code.<br/>
+                With comments you can place notifications and reminders in your HTML code:<br>
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;!-- This is a comment --&gt;
+
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                &lt;!-- Remember to add more information here --&gt;
+                </pre>
+            </code>
+          </div>
+
+          <div class="section section_8">
+            <h1 class="section_header">HTML Links - Hyperlinks</h1>
+            <p class="section_para">
+                HTML links are hyperlinks.<br>
+                You can click on a link and jump to another document.<br>
+                When you move the mouse over a link, the mouse arrow will turn into a little hand.<br>
+                The HTML <code>&lt;a&gt;</a></code> tag defines a hyperlink. It has the following syntax:<br>
+            </p>
+            <code>
+                <pre class="example_code"> 
+                &lt;a href="https://www.w3schools.com/"&gt;Visit W3Schools.com!&lt;/a&gt;
+                </pre>
+            </code>
+            <p class="section_para">
+                The most important attribute of the <code>&lt;a&gt;</a></code> element is the href attribute, which indicates the link's destination.<br>
+                The link text is the part that will be visible to the reader.<br>
+                Clicking on the link text, will send the reader to the specified URL address.<br>
+            </p>
+          </div>
+
+            <div class="section section_9">
+                <h1 class="section_header">HTML Images</h1>
+                <p class="section_para">
+                    The HTML <code>&lt;img&gt;</code> tag is used to embed an image in a web page.<br>
+                    Images are not technically inserted into a web page; images are linked to web pages. The <code>&lt;img&gt;</code> tag creates a holding space for the referenced image.<br>
+                    The <code>&lt;img&gt;</code> tag is empty, it contains attributes only, and does not have a closing tag.<br>
+                    The <code>&lt;img&gt;</code> tag has two required attributes:<br>
+                    src - Specifies the path to the image<br>
+                    alt - Specifies an alternate text for the image<br>
+                </p>
+                <code>
+                    <pre class="example_code"> 
+                    &lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
+                    </pre>
+                </code>
+            </div>
+
+            <div class="section section_10">
+                <h1 class="section_header">HTML Iframes</h1>
+                <p class="section_para">
+                    An HTML iframe is used to display a web page within a web page.<br>
+                    The HTML <code>&lt;iframe&gt;</code> tag specifies an inline frame.<br>
+                    An inline frame is used to embed another document within the current HTML document.<br>
+                </p>
+                <code>
+                    <pre class="example_code"> 
+                    &lt;iframe src="demo_iframe.html" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;
+                    </pre>
+                </code>
+            </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="./../index.js" defer></script>
+    <script>
+      function goToBasicsPage() {
+        window.location.href = "./basics.html";
+      }
+
+      function goToTablesPage() {
+        window.location.href = "./table.html";
+      }
+    </script>
+  </body>
+</html>

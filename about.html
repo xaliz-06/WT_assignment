@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About Team</title>
+  </head>
+  <body>
+    <navbar>
+      <div class="navbar">
+        <div class="nav_container">
+          <div class="nav_toggle"></div>
+          <nav class="nav_links">
+            <a href="./index.html" class="nav_link">Welcome!</a>
+            <a href="./pages/basics.html" class="nav_link">HTML Basics</a>
+            <a href="./pages/tags.html" class="nav_link">HTML Tags</a>
+            <a href="./pages/table.html" class="nav_link">Table</a>
+            <a href="./pages/lists.html" class="nav_link">Lists</a>
+            <a href="./pages/ul.html" class="nav_link">Unordered List</a>
+            <a href="./pages/ol.html" class="nav_link">Ordered List</a>
+          </nav>
+        </div>
+        <div class="links_section">
+          <a class="link" href="./index.html">Welcome</a>
+          <a class="link" href="./about.html">About Our Team</a>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToStart()">START</button>
+        </div>
+        <div class="content">
+          <div class="main_section">
+            <div class="main_content">
+              <h1 class="main_header">About Our Team - Group 14</h1>
+              <div class="main_carousel">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel_img"
+                        src="./images/Passport_size_photo.png"
+                        alt="group_member"
+                      />
+                      <h3 class="carousel_name">Boibhav Chakraborty</h3>
+                      <h3 class="carousel_roll">2130104</h3>
+                      <p class="carousel_section">ECSE-2 | Group 14</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel_img"
+                        src="./images/WhatsApp Image 2023-12-10 at 19.45.21_be44a236.jpg"
+                        alt="group_member"
+                      />
+                      <h3 class="carousel_name">Kunal Das</h3>
+                      <h3 class="carousel_roll">2130112</h3>
+                      <p class="carousel_section">ECSE-2 | Group 14</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel_img"
+                        src="./images/_MG_6575 (1).jpg"
+                        alt="group_member"
+                      />
+                      <h3 class="carousel_name">Shubham Nayak</h3>
+                      <h3 class="carousel_roll">2130134</h3>
+                      <p class="carousel_section">ECSE-2 | Group 14</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel_img"
+                        src="./images/WhatsApp Image 2023-12-10 at 23.09.05_4e3ff62e.jpg"
+                        alt="group_member"
+                      />
+                      <h3 class="carousel_name">Soumbita Dutta</h3>
+                      <h3 class="carousel_roll">2130141</h3>
+                      <p class="carousel_section">ECSE-2 | Group 14</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel_img"
+                        src="./images/WhatsApp Image 2023-11-30 at 23.42.14_b980560b.jpg"
+                        alt="group_member"
+                      />
+                      <h3 class="carousel_name">Soumen Das</h3>
+                      <h3 class="carousel_roll">2130142</h3>
+                      <p class="carousel_section">ECSE-2 | Group 14</p>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js" defer></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      function goToStart() {
+        window.location.href = "./pages/basics.html";
+      }
+    </script>
+  </body>
+</html>

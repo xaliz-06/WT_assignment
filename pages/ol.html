@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ordered Lists</title>
+  </head>
+  <body>
+    <navbar>
+      <div class="navbar">
+        <div class="nav_container">
+          <div class="nav_toggle"></div>
+          <nav class="nav_links">
+            <a href="./../index.html" class="nav_link">Welcome!</a>
+            <a href="./basics.html" class="nav_link">HTML Basics</a>
+            <a href="./tags.html" class="nav_link">HTML Tags</a>
+            <a href="./table.html" class="nav_link">Table</a>
+            <a href="./lists.html" class="nav_link">Lists</a>
+            <a href="./ul.html" class="nav_link">Unordered List</a>
+            <a href="./ol.html" class="nav_link">Ordered List</a>
+          </nav>
+        </div>
+        <div class="links_section">
+          <a class="link" href="./../index.html">Welcome</a>
+          <a class="link" href="./../about.html">About Our Team</a>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToUnorderedListPage()">PREV</button>
+          <button type="button" onclick="goToIndexPage()">HOME</button>
+        </div>
+        <div class="content">
+          <div class="introduction section">
+            <h1 class="header_page">HTML Ordered Lists</h1>
+            <p class="section_para">
+              The HTML <code>&lt;ol&gt;</code> tag defines an ordered list. An
+              ordered list can be numerical or alphabetical.<br />
+            </p>
+          </div>
+          <div class="section section_1">
+            <h1 class="section_header">Ordered HTML List</h1>
+            <p class="section_para">
+              An ordered list starts with the <code>&lt;ul&gt;</code> tag. Each
+              list item starts with the <code>&lt;li&gt;</code> tag.<br />
+              The list items will be marked with numbers by default:<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;ol&gt;
+                        &lt;li&gt;Coffee&lt;/li&gt;
+                        &lt;li&gt;Tea&lt;/li&gt;
+                        &lt;li&gt;Milk&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre
+              >
+            </code>
+          </div>
+          <div class="section section_2">
+            <h1 class="section_header">Control List Counting</h1>
+            <p class="section_para">
+              By default, an ordered list will start counting from 1. If you
+              want to start counting from a specified number, you can use the
+              start attribute:<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;ol start="50"&gt;
+                        &lt;li&gt;Coffee&lt;/li&gt;
+                        &lt;li&gt;Tea&lt;/li&gt;
+                        &lt;li&gt;Milk&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre
+              >
+            </code>
+          </div>
+          <div class="section section_3">
+            <h1 class="section_header">Nested HTML Lists</h1>
+            <p class="section_para">
+              Lists can be nested (list inside list):<br />
+              <code>
+                <pre class="example_code">
+                    &lt;ol&gt;
+                        &lt;li&gt;Coffee&lt;/li&gt;
+                        &lt;li&gt;Tea
+                            &lt;ol&gt;
+                            &lt;li&gt;Black tea&lt;/li&gt;
+                            &lt;li&gt;Green tea&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;Milk&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre>
+              </code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./../index.js" defer></script>
+    <script>
+      function goToIndexPage() {
+        window.location.href = "./../index.html";
+      }
+
+      function goToUnorderedListPage() {
+        window.location.href = "./ul.html";
+      }
+    </script>
+  </body>
+</html>

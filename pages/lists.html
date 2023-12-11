@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Lists in HTML</title>
+  </head>
+  <body>
+    <navbar>
+      <div class="navbar">
+        <div class="nav_container">
+          <div class="nav_toggle"></div>
+          <nav class="nav_links">
+            <a href="./../index.html" class="nav_link">Welcome!</a>
+            <a href="./basics.html" class="nav_link">HTML Basics</a>
+            <a href="./tags.html" class="nav_link">HTML Tags</a>
+            <a href="./table.html" class="nav_link">Table</a>
+            <a href="./lists.html" class="nav_link">Lists</a>
+            <a href="./ul.html" class="nav_link">Unordered List</a>
+            <a href="./ol.html" class="nav_link">Ordered List</a>
+          </nav>
+        </div>
+        <div class="links_section">
+          <a class="link" href="./../index.html">Welcome</a>
+          <a class="link" href="./../about.html">About Our Team</a>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToTablePage()">PREV</button>
+          <button type="button" onclick="goToUnorderedListPage()">NEXT</button>
+        </div>
+        <div class="content">
+          <div class="introduction section">
+            <h1 class="header_page">HTML Lists</h1>
+            <p class="section_para">
+              HTML lists allow web developers to group a set of related items in
+              lists.<br />
+            </p>
+          </div>
+          <div class="section section_1">
+            <h1 class="section_header">Unordered HTML List</h1>
+            <p class="section_para">
+              An unordered list starts with the <code>&lt;ul&gt;</code> tag.
+              Each list item starts with the <code>&lt;li&gt;</code> tag.<br />
+              The list items will be marked with bullets (small black circles)
+              by default:<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;ul&gt;
+                        &lt;li&gt;Coffee&lt;/li&gt;
+                        &lt;li&gt;Tea&lt;/li&gt;
+                        &lt;li&gt;Milk&lt;/li&gt;
+                    &lt;/ul&gt;
+                </pre
+              >
+            </code>
+          </div>
+          <div class="section section_2">
+            <h1 class="section_header">Ordered HTML List</h1>
+            <p class="section_para">
+              An ordered list starts with the <code>&lt;ul&gt;</code> tag. Each
+              list item starts with the <code>&lt;li&gt;</code> tag.<br />
+              The list items will be marked with numbers by default:<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;ol&gt;
+                        &lt;li&gt;Coffee&lt;/li&gt;
+                        &lt;li&gt;Tea&lt;/li&gt;
+                        &lt;li&gt;Milk&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre
+              >
+            </code>
+          </div>
+          <div class="section section_3">
+            <h1 class="section_header">HTML Description Lists</h1>
+            <p class="section_para">
+              HTML also supports description lists.<br />
+              A description list is a list of terms, with a description of each
+              term.<br />
+              The <code>&lt;dl&gt;</code> tag defines the description list, the
+              <code>&lt;dt&gt;</code> tag defines the term (name), and the
+              <code>&lt;dd&gt;</code> tag describes each term:<br />
+              <code>
+                <pre class="example_code">
+                    &lt;dl&gt;
+                        &lt;dt&gt;Coffee&lt;/dt&gt;
+                        &lt;dd&gt;- black hot drink&lt;/dd&gt;
+                        &lt;dt&gt;Milk&lt;/dt&gt;
+                        &lt;dd&gt;- white cold drink&lt;/dd&gt;
+                    &lt;/dl&gt;
+                </pre>
+              </code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./../index.js" defer></script>
+    <script>
+      function goToUnorderedListPage() {
+        window.location.href = "./ul.html";
+      }
+
+      function goToTablePage() {
+        window.location.href = "./table.html";
+      }
+    </script>
+  </body>
+</html>

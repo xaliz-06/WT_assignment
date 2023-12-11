@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tables in HTML</title>
+  </head>
+  <body>
+    <navbar>
+      <div class="navbar">
+        <div class="nav_container">
+          <div class="nav_toggle"></div>
+          <nav class="nav_links">
+            <a href="./../index.html" class="nav_link">Welcome!</a>
+            <a href="./basics.html" class="nav_link">HTML Basics</a>
+            <a href="./tags.html" class="nav_link">HTML Tags</a>
+            <a href="./table.html" class="nav_link">Table</a>
+            <a href="./lists.html" class="nav_link">Lists</a>
+            <a href="./ul.html" class="nav_link">Unordered List</a>
+            <a href="./ol.html" class="nav_link">Ordered List</a>
+          </nav>
+        </div>
+        <div class="links_section">
+          <a class="link" href="./../index.html">Welcome</a>
+          <a class="link" href="./../about.html">About Our Team</a>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToTagsPage()">PREV</button>
+          <button type="button" onclick="goToListsPage()">NEXT</button>
+        </div>
+        <div class="content">
+          <div class="introduction section">
+            <h1 class="header_page">HTML Tables</h1>
+            <p class="section_para">
+              A table in HTML consists of table cells inside rows and
+              columns.<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Company&lt;/th&gt;
+                    &lt;th&gt;Contact&lt;/th&gt;
+                    &lt;th&gt;Country&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+                    &lt;td&gt;Maria Anders&lt;/td&gt;
+                    &lt;td&gt;Germany&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+                    &lt;td&gt;Francisco Chang&lt;/td&gt;
+                    &lt;td&gt;Mexico&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/table&gt;
+              </pre>
+            </code>
+          </div>
+          <div class="section section_1">
+            <h1 class="section_header">Table Cells</h1>
+            <p class="section_para">
+              Each table cell is defined by a <code>&lt;td&gt;</code> and a
+              <code>&lt;/td&gt;</code> tag.<br />
+              Everything between <code>&lt;td&gt;</code> and
+              <code>&lt;/td&gt;</code> are the content of the table cell.<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Emil&lt;/td&gt;
+                        &lt;td&gt;Tobias&lt;/td&gt;
+                        &lt;td&gt;Linus&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                </pre
+              >
+            </code>
+          </div>
+          <div class="section section_2">
+            <h1 class="section_header">Table Rows</h1>
+            <p class="section_para">
+              Each table row starts with a <code>&lt;tr&gt;</code> and ends with
+              a <code>&lt;/tr&gt;</code> tag.<br />
+              You can have as many rows as you like in a table; just make sure
+              that the number of cells are the same in each row.<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Emil&lt;/td&gt;
+                        &lt;td&gt;Tobias&lt;/td&gt;
+                        &lt;td&gt;Linus&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;16&lt;/td&gt;
+                        &lt;td&gt;14&lt;/td&gt;
+                        &lt;td&gt;10&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                </pre
+              >
+            </code>
+          </div>
+          <div class="section section_3">
+            <h1 class="section_header">Table Headers</h1>
+            <p class="section_para">
+              Sometimes you want your cells to be table header cells. In those
+              cases use the <code>&lt;th&gt;</code> tag instead of the
+              <code>&lt;td&gt;</code> tag:<br />
+              By default, the text in <code>&lt;th&gt;</code> elements are bold
+              and centered, but you can change that with CSS.<br />
+            </p>
+            <code>
+              <pre class="example_code">
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Person 1&lt;/th&gt;
+                        &lt;th&gt;Person 2&lt;/th&gt;
+                        &lt;th&gt;Person 3&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Emil&lt;/td&gt;
+                        &lt;td&gt;Tobias&lt;/td&gt;
+                        &lt;td&gt;Linus&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;16&lt;/td&gt;
+                        &lt;td&gt;14&lt;/td&gt;
+                        &lt;td&gt;10&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                </pre
+              >
+            </code>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./../index.js" defer></script>
+    <script>
+      function goToTagsPage() {
+        window.location.href = "./tags.html";
+      }
+
+      function goToListsPage() {
+        window.location.href = "./lists.html";
+      }
+    </script>
+  </body>
+</html>

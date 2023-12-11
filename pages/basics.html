@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/044086a145.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Basics of HTML</title>
+  </head>
+  <body>
+    <navbar>
+      <div class="navbar">
+        <div class="nav_container">
+          <div class="nav_toggle"></div>
+          <nav class="nav_links">
+            <a href="./../index.html" class="nav_link">Welcome!</a>
+            <a href="./basics.html" class="nav_link">HTML Basics</a>
+            <a href="./tags.html" class="nav_link">HTML Tags</a>
+            <a href="./table.html" class="nav_link">Table</a>
+            <a href="./lists.html" class="nav_link">Lists</a>
+            <a href="./ul.html" class="nav_link">Unordered List</a>
+            <a href="./ol.html" class="nav_link">Ordered List</a>
+          </nav>
+        </div>
+        <div class="links_section">
+          <a class="link" href="./../index.html">Welcome</a>
+          <a class="link" href="./../about.html">About Our Team</a>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <div class="container">
+        <div class="btn_container">
+          <button type="button" onclick="goToIndexPage()">HOME</button>
+          <button type="button" onclick="goToTagsPage()">NEXT</button>
+        </div>
+        <div class="content">
+          <div class="introduction section">
+            <h1 class="header_page">HTML Basic Examples</h1>
+            <p class="section_para">
+              In this chapter we will show some basic HTML examples.<br />
+
+              Don't worry if we use tags you have not learned about yet.
+            </p>
+          </div>
+          <div class="section section_1">
+            <h1 class="section_header">HTML Documents</h1>
+            <p class="section_para">
+              All HTML documents must start with a document type declaration:
+              <code>&lt;!DOCTYPE html&gt;</code>.<br />
+              The HTML document itself begins with <code>&lt;html&gt;</code> and
+              ends with <code>&lt;/html&gt;</code>.<br />
+              The visible part of the HTML document is between
+              <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.
+            </p>
+            <code>
+              <pre class="example_code">
+              &lt;!DOCTYPE html&gt; 
+              &lt;html&gt; 
+                &lt;body&gt; 
+                    &lt;h1&gt;My First Heading&lt;/h1&gt; 
+                    &lt;p&gt;My first paragraph.&lt;/p&gt;
+                &lt;/body&gt; 
+              &lt;/html&gt;
+              </pre>
+            </code>
+          </div>
+          <div class="section section_2">
+            <h1 class="section_header">The &lt;!DOCTYPE&gt; Declaration</h1>
+            <p class="section_para">
+              The &lt;!DOCTYPE&gt; declaration represents the document type, and
+              helps browsers to display web pages correctly.<br />
+              It must only appear once, at the top of the page (before any HTML
+              tags).<br />
+              The &lt;!DOCTYPE&gt; declaration is not case sensitive.<br />The
+              &lt;!DOCTYPE&gt; declaration for HTML5 is:<br />
+              <code>
+                <pre class="example_code"> &lt;!DOCTYPE html&gt; </pre>
+              </code>
+            </p>
+          </div>
+
+          <div class="section section_3">
+            <h1 class="section_header">How to View HTML Source</h1>
+            <p class="section_para">
+              Have you ever seen a Web page and wondered "Hey! How did they do
+              that?"
+            </p>
+
+            <h3 class="section_sub_header">View HTML Source Code:</h3>
+            <p class="section_sub_para">
+              Click CTRL + U in an HTML page, or right-click on the page and
+              select "View Page Source". This will open a new tab containing the
+              HTML source code of the page.
+            </p>
+
+            <h3 class="section_sub_header">Inspect an HTML Element:</h3>
+            <p class="section_sub_para">
+              Right-click on an element (or a blank area), and choose "Inspect"
+              to see what elements are made up of (you will see both the HTML
+              and the CSS). You can also edit the HTML or CSS on-the-fly in the
+              Elements or Styles panel that opens.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./../index.js" defer></script>
+    <script>
+      function goToTagsPage() {
+        window.location.href = "./tags.html";
+      }
+
+      function goToIndexPage() {
+        window.location.href = "./../index.html";
+      }
+    </script>
+  </body>
+</html>
